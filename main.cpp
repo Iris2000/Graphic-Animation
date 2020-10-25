@@ -477,6 +477,140 @@ void sun() {
     glTranslatef(sx+1000,sy+1000,0);
     drawCircle(40);
     glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(sx+690,sy+445,0);
+    glBegin(GL_TRIANGLES);
+    glColor3f(9.0f, 0.8f, 0.0f);
+    glVertex2d(300, 600);
+    glVertex2d(310, 620);
+    glVertex2d(320, 600);
+    glEnd();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(sx+655,sy+445,0);
+    glBegin(GL_TRIANGLES);
+    glColor3f(9.0f, 0.8f, 0.0f);
+    glVertex2d(300, 600);
+    glVertex2d(307, 580);
+    glVertex2d(320, 593);
+    glEnd();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(sx+635,sy+400,0);
+    glBegin(GL_TRIANGLES);
+    glColor3f(9.0f, 0.8f, 0.0f);
+    glVertex2d(300, 600);
+    glVertex2d(320, 610);
+    glVertex2d(320, 590);
+    glEnd();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(sx+730,sy+445,0);
+    glBegin(GL_TRIANGLES);
+    glColor3f(9.0f, 0.8f, 0.0f);
+    glVertex2d(298, 593);
+    glVertex2d(318, 600);
+    glVertex2d(308, 580);
+    glEnd();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(sx+745,sy+400,0);
+    glBegin(GL_TRIANGLES);
+    glColor3f(9.0f, 0.8f, 0.0f);
+    glVertex2d(320, 600);
+    glVertex2d(300, 610);
+    glVertex2d(300, 590);
+    glEnd();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(sx+655,sy+360,0);
+    glBegin(GL_TRIANGLES);
+    glColor3f(9.0f, 0.8f, 0.0f);
+    glVertex2d(298, 595);
+    glVertex2d(305, 615);
+    glVertex2d(318, 602);
+    glEnd();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(sx+690,sy+355,0);
+    glBegin(GL_TRIANGLES);
+    glColor3f(9.0f, 0.8f, 0.0f);
+    glVertex2d(300, 600);
+    glVertex2d(310, 580);
+    glVertex2d(320, 600);
+    glEnd();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(sx+730,sy+360,0);
+    glBegin(GL_TRIANGLES);
+    glColor3f(9.0f, 0.8f, 0.0f);
+    glVertex2d(298, 602);
+    glVertex2d(308, 615);
+    glVertex2d(318, 595);
+    glEnd();
+    glPopMatrix();
+
+    //eyes
+    glPushMatrix();
+    glTranslatef(sx+283,sy+305,0);
+    glEnable(GL_POINT_SMOOTH);
+    glPointSize(3);
+    glBegin(GL_POINTS);
+    glColor3f(0.0f, 0.0f, 0.0f);
+    glVertex2d(700, 700);
+    glEnd();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(sx+315,sy+305,0);
+    glEnable(GL_POINT_SMOOTH);
+    glPointSize(3);
+    glBegin(GL_POINTS);
+    glColor3f(0.0f, 0.0f, 0.0f);
+    glVertex2d(700, 700);
+    glEnd();
+    glPopMatrix();
+
+    //blush
+    glPushMatrix();
+    glTranslatef(sx+275,sy+295,0);
+    glEnable(GL_POINT_SMOOTH);
+    glPointSize(6);
+    glBegin(GL_POINTS);
+    glColor3f(1.0f, 0.5f, 0.5f);
+    glVertex2d(700, 700);
+    glEnd();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(sx+323,sy+295,0);
+    glEnable(GL_POINT_SMOOTH);
+    glPointSize(6);
+    glBegin(GL_POINTS);
+    glColor3f(1.0f, 0.5f, 0.5f);
+    glVertex2d(700, 700);
+    glEnd();
+    glPopMatrix();
+
+    //mouth
+    glPushMatrix();
+    glTranslatef(sx+290,sy+200,0);
+    glBegin(GL_LINES);
+    glColor3f(0.0f, 0.0f, 0.0f);
+    glVertex2d(700, 790);
+    glVertex2d(710, 785);
+    glVertex2d(710, 785);
+    glVertex2d(720, 790);
+    glEnd();
+    glPopMatrix();
 }
 
 void moon() {
@@ -484,6 +618,62 @@ void moon() {
     glPushMatrix();
     glTranslatef(mx+1000,my+1000,0);
     drawCircle(40);
+    glPopMatrix();
+
+    //eyes
+    glPushMatrix();
+    glTranslatef(mx+275,my+205,0);
+    glBegin(GL_LINES);
+    glColor3f(0.0f, 0.0f, 0.0f);
+    glVertex2d(700, 790);
+    glVertex2d(705, 785);
+    glVertex2d(705, 785);
+    glVertex2d(710, 790);
+    glEnd();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(mx+315,my+205,0);
+    glBegin(GL_LINES);
+    glColor3f(0.0f, 0.0f, 0.0f);
+    glVertex2d(700, 790);
+    glVertex2d(705, 785);
+    glVertex2d(705, 785);
+    glVertex2d(710, 790);
+    glEnd();
+    glPopMatrix();
+
+    //blush
+    glPushMatrix();
+    glTranslatef(mx+270,my+285,0);
+    glEnable(GL_POINT_SMOOTH);
+    glPointSize(6);
+    glBegin(GL_POINTS);
+    glColor3f(1.0f, 0.5f, 0.5f);
+    glVertex2d(700, 700);
+    glEnd();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(mx+330,my+285,0);
+    glEnable(GL_POINT_SMOOTH);
+    glPointSize(6);
+    glBegin(GL_POINTS);
+    glColor3f(1.0f, 0.5f, 0.5f);
+    glVertex2d(700, 700);
+    glEnd();
+    glPopMatrix();
+
+    //mouth
+    glPushMatrix();
+    glTranslatef(mx+295,my+190,0);
+    glBegin(GL_LINES);
+    glColor3f(0.0f, 0.0f, 0.0f);
+    glVertex2d(700, 790);
+    glVertex2d(705, 792);
+    glVertex2d(705, 792);
+    glVertex2d(710, 790);
+    glEnd();
     glPopMatrix();
 }
 
